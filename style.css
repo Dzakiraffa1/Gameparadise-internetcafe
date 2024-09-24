@@ -1,0 +1,888 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --blue: #201E43;
+    --light-blue: #5C2FC2;
+    --light-yellow: #F9E400;
+    --dark-blue: #1a1a3d;
+    --light-green: #2ecc71;
+    --light-red: #e74c3c;
+}
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+html, body {
+    overflow-x: hidden;
+}
+body{
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+.sidebar {
+    position: fixed;
+    background-color: #201E43;
+    width: 200px;
+    height: 100%;
+}
+
+.sidebar h2 {
+    color: white;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.sidebar h2 span {
+    color: var(--light-yellow);
+}
+.sidebar .bar {
+    padding: 20px 20px;
+}
+.sidebar .bar:hover {
+    background-color: rgb(194, 193, 192);
+    transition: 0.2s ease-in-out;
+    
+}
+.sidebar .bar:active {
+    background-color: white;
+    transition: 0.2s ease-in-out;
+    
+}
+.sidebar a {
+    color: var(--light-yellow);
+}
+.sidebar a span {
+    color: white;
+    margin-left: 5px;
+}
+.sidebar .bar:hover a span,
+.sidebar .bar:active a span {
+    font-weight: 600;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+.bar.active {
+    background-color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.bar.active a {
+    color: black; 
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+.bar.active a span {
+    color: black; 
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+footer {
+    margin-top: 150px;
+    font-size: smaller;
+    color: white;
+    padding: 20px 10px;
+    position: fixed;
+    bottom: 0;
+}
+
+.page {
+    margin-right: 20px;
+    margin-left: 210px;
+    padding: 10px;
+}
+.hidden {
+    display: none;
+}
+h1 span {
+    color: var(--light-blue);
+}
+/* home */
+.page1 {
+    margin-top: 20px;
+    width: 100%;
+    height: 220px;
+    background: url(img/80593.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    
+}
+
+.home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 2, 2, 0.55);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+.home h1 {
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+.home h1 span {
+    color: var(--light-yellow);
+}
+
+.home p {
+    color: var(--light-yellow);
+    margin-bottom: 10px;
+}
+.home p:hover {
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+.home button {
+    color: var(--light-blue);
+    background-color: yellow;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 6px 20px;
+    border-radius: 20px;
+}
+.home button:hover {
+    padding: 7px 25px;
+    background-color: rgb(185, 185, 5);
+    color: rgb(255, 255, 255);
+    transition: 0.4s ease-in-out;
+}
+.page-home .content {
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 90px;
+}
+.page-home .content h2 {
+    margin-top: 50px;
+}
+
+.page-home .content .content1 p {
+    margin-top: 10px;
+    font-weight: 600;
+}
+.page-home .content2 {
+    padding-top: 1px;
+    color: white;
+    margin-top: 30px;
+    border-radius: 30px;
+    background-color: var(--blue);
+    box-shadow: 8px 8px rgba(2, 2, 2, 0.45);
+}
+
+.page-home .content2 .spek {
+    margin-top: 30px;
+    
+}
+
+.page-home .content2 .spek p {
+    font-size: 12px;
+}
+.spek {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.ourspecs {
+    padding: 5px;
+    margin: 20px;
+    background-color: #171530;
+    border-radius: 10px;
+}
+.ourspecs:hover {
+    background-color: #1e1c57;
+    transition: 0.4s ease-in-out;
+}
+
+.ourspecs h3 {
+    margin-bottom: 5px;
+}
+
+.top {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    display: flex;
+    margin-top: 80px;
+    padding: 0;
+    
+}
+.content3 h2 {
+    margin-bottom: 10px;
+}
+.content3 .list {
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    color:var(--light-blue);
+    cursor: pointer;
+}
+.content3 .list p {
+    text-decoration-line: underline;
+    margin: 6px;
+    
+}
+.content4 {
+    background-color: var(--blue);
+    padding: 1px;
+    border-radius: 10px;
+    color: white    ;
+}
+.content4 h2{
+    margin-bottom: 10px;
+}
+.content4 {
+    background-color: var(--blue);
+    padding: 1px;
+    border-radius: 10px;
+    color: white;
+}
+
+.content4 h2 {
+    margin-bottom: 10px;
+}
+
+.content4 .isi {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 15px;
+}
+
+.text-content {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.map-content {
+    flex: 1; 
+}
+
+.content4 p {
+    padding: 5px 10px;
+    margin: 0; 
+}
+
+.content4 iframe {
+    width: 100%; 
+    height: 350px;
+    border: 0;
+    border-radius: 10px; 
+}
+
+/* rules */
+.page-rules {
+    text-align: center;
+}
+.page-rules .proco {
+    padding: 2px;
+    margin-top: 40px;
+    color: white;
+    background-color: var(--blue);
+    border-radius: 20px;
+}
+
+.page-rules .pros {
+    display: flex;
+    justify-content: space-between; 
+    align-items: stretch; 
+    margin: 20px;
+}
+
+.page-rules .pc {
+    flex: 1; 
+    padding: 10px; 
+    margin: 0 10px; 
+    box-sizing: border-box; 
+}
+
+.page-rules .pc:first-child {
+    background-color: green;
+    border-radius: 10px;
+}
+
+.page-rules .pc:last-child {
+    background-color: red;
+    border-radius: 10px;
+}
+
+.page-rules .pros p {
+    font-size: 13px;
+    margin: 5px;
+    font-weight: 600;
+}
+
+.page-rules {
+    background-color: var(--dark-blue); 
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings */
+.page-rules h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--light-yellow)
+}
+
+.page-rules h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    
+}
+
+
+.page-rules p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+
+.page-rules p:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+/* games */
+.page-games {
+    background-color: var(--dark-blue); 
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Headings */
+.page-games h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--light-yellow)
+}
+
+.page-games .isigem {
+    background-color: var(--blue);
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+.page-games h3 {
+    font-size: smaller;
+}
+.page-games .isigame h4 {
+    color: var(--light-yellow);
+    margin-top: 20px;
+    font-size: x-large;
+}
+.page-games .lisgame {
+    flex: 1 1 200px; 
+    max-width: 170px; 
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+}
+.page-games .lisgame:hover {
+    box-shadow: 15px 15px 15px rgba(251, 255, 0, 0.8);
+    background-color: rgb(201, 201, 201);
+    border-radius: 30px;
+    transition: 0.4s ease-in-out;
+}
+.page-games .lisgame img {
+    margin-top: 10px;
+    width: 130px;
+    height: 230px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.8);
+    
+}
+.page-games .lisgame h5 {
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* promo */
+.contenta {
+    margin-top: 20px;
+    width: 100%;
+    height: 260px;
+    background: url(img/download\ \(7\).jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.8);
+}
+.contentb {
+    margin-top: 20px;
+    width: 100%;
+    height: 260px;
+    background: url(img/download\ \(10\).jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.8);
+}
+.contentc {
+    margin-top: 20px;
+    width: 100%;
+    height: 260px;
+    background: url(img/download\ \(12\).jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.8);
+}
+.contentd {
+    margin-top: 20px;
+    width: 100%;
+    height: 260px;
+    background: url(img/download\ \(9\).jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.8);
+}
+.contente {
+    margin-top: 20px;
+    width: 100%;
+    height: 260px;
+    background: url(img/download\ \(11\).jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.8);
+}
+.contentf {
+    margin-top: 20px;
+    width: 100%;
+    height: 260px;
+    background: url(img/download\ \(14\).jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.8);
+}
+.contentg {
+    margin-top: 20px;
+    width: 100%;
+    height: 260px;
+    background: url(img/download\ \(13\).jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+.contenta .posa, .contentb .posa, .contentc .posa, .contentd .posa, .contente .posa, .contentf .posa, .contentg .posa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 2, 2, 0.35);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.posa:hover {
+    background: rgba(2, 2, 2, 0.15);
+    transition: 0.3s ease-in-out;
+}
+.posa h3 {
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 5px;
+    text-shadow: 4px 2px #171530;
+}
+.posa p {
+    margin-bottom: 10px;
+    text-shadow: 4px 2px #171530;
+}
+
+/* booking page */
+.page-book {
+    background-color: var(--dark-blue); 
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    text-align: left;
+}
+
+.page-book h1 {
+    font-size: 36px;
+    color: var(--light-yellow);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page-book .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.page-book .input,
+.page-book .time {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.page-book label {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.page-book input[type="text"],
+.page-book input[type="email"],
+.page-book input[type="tel"],
+.page-book input[type="date"],
+.page-book input[type="number"],
+.page-book input[type="time"] {
+    padding: 10px;
+    border: 1px solid var(--light-yellow);
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}
+
+.page-book input[type="text"]:focus,
+.page-book input[type="email"]:focus,
+.page-book input[type="tel"]:focus,
+.page-book input[type="date"]:focus,
+.page-book input[type="number"]:focus,
+.page-book input[type="time"]:focus {
+    border-color: var(--blue);
+    outline: none;
+}
+
+/* service */
+.page-book .btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.page-book .btn button {
+    flex: 1;
+    padding: 10px;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.page-book .btn button:hover {
+    background-color: var(--light-yellow);
+    color: var(--dark-blue);
+}
+
+.page-book .info {
+    background-color: var(--dark-blue);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--light-yellow);
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.page-book .service p {
+    font-size: 16px;
+    color: white;
+}
+
+/* booking */
+.page-book .inputbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-book .inputbtn button {
+    padding: 15px 30px;
+    background-color: var(--light-yellow);
+    color: var(--dark-blue);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.page-book .inputbtn button:hover {
+    background-color: var(--blue);
+    color: white;
+    transform: scale(1.05);
+}
+
+.page-book .inputbtn button:active {
+    transform: scale(0.95);
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #fff;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    margin: 5px;
+}
+
+.selected {
+    background-color: var(--light-yellow); 
+    color: white;
+}
+
+.btn button {
+    background-color: #f1f1f1; 
+    color: #000; 
+    border: 1px solid #ccc; 
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.btn button.selected {
+    background-color: var(--light-yellow); 
+    color: #000000; 
+    border: 1px solid #000000; 
+}
+
+.modal button {
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+.green {
+    background-color: #4CAF50; 
+    border: 1px solid #4CAF50; 
+}
+
+.green:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+
+.red {
+    background-color: #f44336; 
+    border: 1px solid #f44336; 
+}
+
+.red:hover {
+    background-color: #e53935; 
+    transform: scale(1.05); 
+}
+
+
+.sidebar {
+    position: fixed;
+    background-color: #201E43;
+    width: 200px;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.sidebar.hidden {
+    transform: translateX(-100%);
+}
+
+.sidebar h2 {
+    color: white;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.sidebar .bar {
+    padding: 20px 20px;
+}
+
+.sidebar .bar:hover {
+    background-color: rgb(194, 193, 192);
+}
+
+.sidebar .bar:active {
+    background-color: white;
+}
+
+.sidebar a {
+    color: var(--light-yellow);
+}
+
+.sidebar a span {
+    color: white;
+    margin-left: 5px;
+}
+
+.sidebar .bar:hover a span,
+.sidebar .bar:active a span {
+    font-weight: 600;
+    color: black;
+}
+
+
+.burger-icon {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
+
+/* media */
+@media (min-width: 769px) {
+    .sidebar {
+        transform: translateX(0);
+    }
+
+    .burger-icon {
+        display: none;
+    }
+
+    .page {
+        margin-right: 20px;
+        margin-left: 210px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        z-index: 1000;
+    }
+
+    .burger-icon {
+        display: block;
+    }
+
+    .burger-icon.active + .sidebar {
+        transform: translateX(0);
+    }
+
+    .page {
+        margin-right: 20px;
+        margin-left: 0;
+    }
+
+    .home h1 {
+        font-size: 36px;
+    }
+
+    .content3 .list {
+        flex-direction: column;
+    }
+
+    .content4 .isi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-book .btn button {
+        flex: 1 1 100%;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+
+  
